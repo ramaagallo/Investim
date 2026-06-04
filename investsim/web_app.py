@@ -32,7 +32,8 @@ app = FastAPI(title="InvestSim")
 
 @app.get("/", response_class=HTMLResponse)
 async def index():
-    return Path("templates/index.html").read_text(encoding="utf-8")
+    template_path = Path(__file__).resolve().parent / "templates" / "index.html"
+    return template_path.read_text(encoding="utf-8")
 
 
 # ─── Tipo de cambio ───────────────────────────────────────────────────────────
