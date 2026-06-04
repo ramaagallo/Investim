@@ -17,7 +17,7 @@ from fastapi.responses import HTMLResponse, Response
 from pydantic import BaseModel
 import uvicorn
 
-from core import (
+from .core import (
     INVESTMENT_PROFILES,
     INSTRUMENT_ORDER,
     generate_simulation,

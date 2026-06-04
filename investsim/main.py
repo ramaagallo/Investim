@@ -12,7 +12,7 @@ from rich.panel import Panel
 from rich.prompt import Prompt, Confirm
 from rich.rule import Rule
 
-from core import (
+from .core import (
     INVESTMENT_PROFILES,
     INSTRUMENT_ORDER,
     generate_simulation,
